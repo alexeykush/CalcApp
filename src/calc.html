@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="/calcApp/calc" method="post">
+    <input type="text" name="a">
+    <input type="text" name="b">
+    <select name="op" >
+        <option>add</option>
+        <option>sub</option>
+        <option>multi</option>
+        <option>div</option>
+    </select>
+    <input type="submit" value="submit">
+</form>
+
+<form action="/calcApp/calc/history" method="get">
+    <input type="submit" value="history">
+</form>
+
+<form action="/calcApp/cookies" method="post">
+    <input type="submit" value="log out">
+</form>
+</body>
+</html>
